@@ -1,0 +1,62 @@
+
+
+<!-- Apis Login User -->
+
+Request    :- Post
+URL        :- http://localhost/apis/api/auth/login
+Parameters :- {
+    'email'     : 'jatinderkumar0550@gmail.com',
+    'password'  : 'admin@123'
+}
+Response:-
+            {
+                "success": true,
+                "message": "Loged in successfully!",
+                "data": {
+                    "id": 1,
+                    "name": "Jatinder Kumar",
+                    "email": "jatinderkumar0550@gmail.com",
+                    "email_verified_at": null,
+                    "created_at": "2019-09-16 16:20:42",
+                    "updated_at": "2019-09-16 16:20:42"
+                }
+            }
+
+<!-- End Apis Login User -->
+
+
+<!-- Apis Get Product list -->
+Request :- Get
+URL     :- http://localhost/apis/api/products
+Response:-
+            {
+                "success": true,
+                "message": "Product fetch successfully.",
+                "data": [
+                    {
+                        "id": 1,
+                        "product_name": "Bottel",
+                        "product_price": "300.00",
+                        "product_description": "Before renaming a table, you should verify that any foreign key constraints on the table have an explicit name in your migration files instead of letting Laravel assign a convention based name. Otherwise, the foreign key constraint name will refer to the old table name.",
+                        "created_at": "2019-09-16 00:00:00",
+                        "updated_at": "2019-09-16 00:00:00"
+                    },
+                    {
+                        "id": 2,
+                        "product_name": "Mobile",
+                        "product_price": "10000.00",
+                        "product_description": "The Laravel Schema class provides a database agnostic way of manipulating tables. It works well with all of the databases supported by Laravel, and has a unified API across all of these systems.The Laravel Schema class provides a database agnostic way of manipulating tables. It works well with all of the databases supported by Laravel, and has a unified API across all of these systems.The Laravel Schema class provides a database agnostic way of manipulating tables. It works well with all of the databases supported by Laravel, and has a unified API across all of these systems.",
+                        "created_at": "2019-09-10 00:00:00",
+                        "updated_at": "2019-09-10 00:00:00"
+                    },
+                    {
+                        "id": 3,
+                        "product_name": "Watch",
+                        "product_price": "5000.00",
+                        "product_description": "The Laravel Schema class provides a database agnostic way of manipulating tables. It works well with all of the databases supported by Laravel, and has a unified API across all of these systems.The Laravel Schema class provides a database agnostic way of manipulating tables. It works well with all of the databases supported by Laravel, and has a unified API across all of these systems.The Laravel Schema class provides a database agnostic way of manipulating tables. It works well with all of the databases supported by Laravel, and has a unified API across all of these systems.The Laravel Schema class provides a database agnostic way of manipulating tables. It works well with all of the databases supported by Laravel, and has a unified API across all of these systems.The Laravel Schema class provides a database agnostic way of manipulating tables. It works well with all of the databases supported by Laravel, and has a unified API across all of these systems.",
+                        "created_at": "2019-09-11 00:00:00",
+                        "updated_at": "2019-09-11 00:00:00"
+                    }
+                ]
+            }
+<!-- End Apis Get Product list -->
